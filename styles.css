@@ -9,7 +9,8 @@
     --primary-color: #ffffff;
     --pure-color: #f2f2f2;
     --dark-color: #000000;
-    --accent-color: #ffd700;
+    --accent-color: #ffd300;
+    --accent2-color: #ffd700;
 }
 
 /* COMMMON ELEMENTS */
@@ -25,10 +26,74 @@ a {
     background: var(--accent-color);
     border-radius: 30px;
     border: 2px solid transparent;
+    box-sizing: border-box;
+    transition: all .3s ease;
+}
+
+.cta:hover,
+.cta:active {
+    color: var(--accent-color);
+    background: transparent;
+    border: 2px solid var(--accent-color);
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.45);
 }
 
 /* COMMON ELEMENTS END */
 
+/* NAVIGATION */
+
+.navbar {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: var(--pure-color);
+}
+
+.logo {
+    font-size: 3vmin;
+    text-transform: uppercase;
+}
+
+.logo span {
+    color: var(--accent2-color);
+}
+
+ul {
+    list-style: none;
+}
+
+.nav_links {
+    display: flex;
+    align-items: center;
+}
+
+.nav_links li {
+    margin: 0 30px;
+}
+
+.nav_links li a {
+    color: var(--pure-color);
+    transition: all .3s ease;
+}
+
+.nav_links li a:hover {
+    color: var(--accent2-color);
+}
+
+.menu_btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 40px;
+    display: none;
+    pointer-events: none;
+}
+
+/* HEADER */
 header{
     height: 100vh;
     width: 100%;
@@ -64,4 +129,44 @@ header{
     background: var(--accent-color);
     margin: 10px auto;
     border-radius: 5px;
+}
+
+
+/* MOBILE */
+@media only screen and (max-width: 850px) {
+    .menu_btn {
+        display: block;
+        pointer-events: all;
+    }
+    .navbar {
+        padding: 0;
+    }
+
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    .nav_links {
+        height: 100vh;
+        width: 100%;
+        background: #6fa9b4;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -1200px;
+        transition: all .5s ease;
+    }
+
+    .mobile_menu {
+        margin: 0;
+        border-bottom-right-radius: 30%;
+    }
+
+    .nav_links li {
+        margin: 30px auto;
+    }
+
+
+
 }
