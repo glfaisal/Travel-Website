@@ -290,9 +290,22 @@ p {
 /* UPCOMING TOURS SECTION END */
 
 
+/* FOOTER */
 
+footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    text-align: center;
+    background: var(--title-color);
+}
 
+footer p {
+    color: var(--pure-color);
+    margin: 20px auto;
+}
 
+/* FOOTER END */
 
 
 /* MOBILE */
