@@ -184,11 +184,14 @@ h4 {
 p {
      color: var(--text-color);
      padding: 0 40px;
-     text-align: center;
 }
 
 .events .cta {
     margin-top: 30px;
+}
+
+.events p {
+    text-align: center;
 }
 
 /* UPCOMING EVENTS SECTION END */
@@ -232,9 +235,64 @@ p {
     margin-top: 40px;
 }
 
-
-
 /* EXPLORE THE WORLD SECTION END */
+
+
+/* UPCOMING TOURS SECTION */
+
+.img_gallery img {
+    max-width: 300px;
+    margin: 10px;
+}
+
+.tours {
+    margin: 100px 0;
+    padding: 0 40px;
+}
+
+.img_col {
+    width: 55%;
+}
+
+.content_col {
+    width: 45%;
+}
+
+.img_gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tours .row {
+    gap: 20px;
+}
+
+.content_col h1 {
+    font-size: 7vmin;
+    color: var(--title-color);
+    text-transform: uppercase;
+}
+
+.content_col .line {
+    margin-left: -1px;
+}
+
+.content_col p {
+    padding: 0;
+    margin: 30px auto;
+}
+
+.content_col .cta {
+    margin-left: -100px;
+}
+
+/* UPCOMING TOURS SECTION END */
+
+
+
+
+
 
 
 /* MOBILE */
